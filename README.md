@@ -1,1 +1,1 @@
-# activities
+# Python Crash Course Activities
