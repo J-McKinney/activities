@@ -1,5 +1,6 @@
 import pygame
 
+
 class Ship:
     def __init__(self, ai_game):
         """Initialize the ship and its starting position"""
@@ -8,7 +9,7 @@ class Ship:
         self.screen_rect = ai_game.screen.get_rect()
 
         # Load the ship image and get its rectangular attributes
-        self.image = pygame.image.load('images/rocket_ship.bmp')
+        self.image = pygame.image.load('images/rocket-2442125_640 (1).png')
         self.rect = self.image.get_rect()
         # Start each new ship at the bottom center of the screen
         self.rect.midbottom = self.screen_rect.midbottom
