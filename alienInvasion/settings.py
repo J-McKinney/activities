@@ -17,4 +17,4 @@ class  Settings:
         self.bullet_height = 15
         self.bullet_color = (250, 60, 60)
         # Number of bullets allowed to be on screen at one time
-        self.bullets_allowed = 3
+        self.bullets_allowed = 5
