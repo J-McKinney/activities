@@ -22,7 +22,7 @@ class  Settings:
         # Bullet settings
         self.bullet_speed = 2.0
         # change the bullet width for multiple hits and spreadshot
-        self.bullet_width = 3
+        self.bullet_width = 300
         self.bullet_height = 15
         self.bullet_color = (250, 60, 60)
         # Number of bullets allowed to be on screen at one time
