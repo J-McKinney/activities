@@ -19,10 +19,12 @@ class  Settings:
 
         # Ship settings
         self.ship_speed = 1.5
+
         # Bullet settings
-        self.bullet_speed = 2.0
-        # change the bullet width for multiple hits and spreadshot
-        self.bullet_width = 300
+        # change the bullet speed for faster bullets 2.0
+        self.bullet_speed = 5.5
+        # change the bullet width for multiple hits and spreadshot 3
+        self.bullet_width = 100
         self.bullet_height = 15
         self.bullet_color = (250, 60, 60)
         # Number of bullets allowed to be on screen at one time
