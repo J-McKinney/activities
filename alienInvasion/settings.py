@@ -19,6 +19,7 @@ class  Settings:
 
         # Ship settings
         self.ship_speed = 1.5
+        self.ship_limit = 3
 
         # Bullet settings
         # change the bullet speed for faster bullets default: 2.0
@@ -33,6 +34,6 @@ class  Settings:
         # Alien settings
         self.alien_speed = 1.0
         # change drop speed for the aliens (test purposes) default: 10
-        self.fleet_drop_speed = 10
+        self.fleet_drop_speed = 100
         # fleet_direction of 1 represents right; -1 represents left
         self.fleet_direction = 1
