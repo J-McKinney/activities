@@ -8,6 +8,8 @@ from settings import Settings
 
 from game_stats import GameStats
 
+from scoreboard import ScoreBoard
+
 from button import Button
 
 from ship import Ship
@@ -36,6 +38,7 @@ class AlienInvasion:
 
         # Create an instance to store game stats
         self.stats = GameStats(self)
+        self.sb = ScoreBoard(self)
 
         self.ship = Ship(self)
         self.bullets = pygame.sprite.Group()
