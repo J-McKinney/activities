@@ -34,7 +34,7 @@ class  Settings:
         # Alien settings
         self.alien_speed = 1.0
         # change drop speed for the aliens (test purposes) default: 10
-        self.fleet_drop_speed = 5
+        self.fleet_drop_speed = 100
 
         # How quickly the game speeds up
         self.speedup_scale = 1.1
