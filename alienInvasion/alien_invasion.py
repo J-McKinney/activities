@@ -97,6 +97,7 @@ class AlienInvasion:
             # click play button to restart a new game when gameover
             self.stats.reset_stats()
             self.stats.game_active = True
+            self.sb.prep_score()
 
             # Get rid of any remaining aliens and bullets
             self.aliens.empty()
@@ -152,12 +153,16 @@ class AlienInvasion:
 
     def _check_bullet_alien_collisions(self):
         """Respond to bullet-alien collisions"""
-        # Check for any bullets that have hit aliens
-        # If so, get rid of the bullet and the alien
+        # Check for any bullets that have hit aliens, if so, get rid of the bullet and the alien
         # Change the first True to False for aliens to disappear and bullets keep going
         collisions = pygame.sprite.groupcollide(
             self.bullets, self.aliens, False, True
         )
+
+        if collisions:
+            for aliens in collisions.values():
+                self.stats.score += self.settings.alien_points * len(aliens)
+            self.sb.prep_score()
 
         if not self.aliens:
             # Destroy existing bullets and create a new fleet
@@ -275,6 +280,9 @@ class AlienInvasion:
             bullet.draw_bullet()
 
         self.aliens.draw(self.screen)
+
+        # Draw the score information
+        self.sb.show_score()
 
         # Draw the play button if the game is inactive
         if not self.stats.game_active:
