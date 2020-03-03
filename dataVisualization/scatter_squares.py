@@ -6,7 +6,10 @@ y_values = [x**2 for x in x_values]
 plt.style.use('seaborn')
 fig, ax = plt.subplots()
 
-ax.scatter(x_values, y_values, c='red', s=10)
+# colormap is a series of colors in a gradient that moves from start to finish
+ax.scatter(x_values, y_values, c=y_values, cmap=plt.cm.Blues, s=10)
+# use c to represent a color
+# ax.scatter(x_values, y_values, c='red', s=10)
 # you can also use RGB colors too
 # ax.scatter(x_values, y_values, c=(0, 0.8, 0), s=10)
 
