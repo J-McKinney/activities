@@ -17,3 +17,6 @@ ax.set_ylabel("Square of Value", fontsize = 14)
 ax.tick_params(axis = "both", labelsize = 14)
 
 plt.show()
+
+# saves the graph that plt.show() gives us as a png image in our file/directory
+# plt.savefig('line_graph_plot.png', bbox_inches='tight')
